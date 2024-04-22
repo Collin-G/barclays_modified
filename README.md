@@ -11,6 +11,8 @@ However, most importantly, I was using a rolling window of historical volatility
 To do this, I passed the contract features into a dense layer and the volatilities into an LSTM layer. Eventually the output oof both of these layers would be passed into a final dense layer. The labels were simple 1 or 0 (1 representing buy).
 The labels were determined by seeing if buying a straddle generated a profit for a certain contract. 
 
+The strategy was backtested over 200 AAPL straddles, with an accuracy of 60%, generating an average profit of $15 per options contract. 
+
 # Model Architecture 
 
 ![image](https://github.com/Collin-G/barclays_modified/assets/118686914/02155b39-d67b-4daf-9f12-9b833138e2bb)
